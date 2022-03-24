@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgr"
+    tools:context=".SearchFlight">
+
+    <EditText
+        android:id="@+id/edtdate2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="260dp"
+        android:layout_marginRight="80dp"
+        android:background="@android:drawable/editbox_dropdown_light_frame"
+        android:ems="15"
+        android:minHeight="32dp"
+        android:focusable="false"
+        android:hint="DD/MM/YYYY"
+        android:inputType="date"></EditText>
+
+    <EditText
+        android:id="@+id/edtdate1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="315dp"
+        android:layout_marginRight="80dp"
+        android:ems="15"
+        android:background="@android:drawable/editbox_dropdown_light_frame"
+        android:focusable="false"
+        android:minHeight="32dp"
+        android:hint="DD/MM/YYYY"
+        android:inputType="date"></EditText>
+
+    <Spinner
+
+        android:id="@+id/spinner1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginRight="80dp"
+        android:background="@android:drawable/editbox_dropdown_light_frame"
+        android:minHeight="40dp"
+        android:spinnerMode="dropdown" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="70dp"
+        android:layout_height="52dp"
+        android:layout_marginLeft="260dp"
+        android:layout_marginTop="140dp"
+        app:srcCompat="@drawable/plane_go" />
+
+    <Spinner
+
+        android:id="@+id/spinner2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginRight="80dp"
+        android:background="@android:drawable/editbox_dropdown_light_frame"
+        android:minHeight="40dp"
+        android:spinnerMode="dropdown" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="43dp"
+        android:layout_height="29dp"
+        android:layout_marginLeft="275dp"
+        android:layout_marginTop="202dp"
+        app:srcCompat="@drawable/plane_dest" />
+
+    <Button
+        android:id="@+id/btnsignin1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtdate1"
+        android:layout_marginTop="80dp"
+        android:backgroundTint="?android:attr/textColorTertiaryInverse"
+        android:hint="Search"
+        android:layout_marginLeft="80dp"
+        android:layout_marginRight="80dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="401dp"
+        android:layout_height="136dp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:text="Search for a flight"
+        android:textSize="34sp" />
+
+
+</RelativeLayout>
